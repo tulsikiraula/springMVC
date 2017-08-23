@@ -12,7 +12,7 @@ import service.LoginService;
 @Controller
 public class LoginController {
 	
-	@RequestMapping("/jsp/loginAction")
+	@RequestMapping("/loginAction")
 	public ModelAndView checkLogin(HttpServletRequest request, HttpServletResponse response) {
 
 		String username = request.getParameter("username");
