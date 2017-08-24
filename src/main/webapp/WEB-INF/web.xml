@@ -7,7 +7,7 @@
  <welcome-file>index.jsp</welcome-file>
  </welcome-file-list>
  
-<!-- if  ContextLoaderListener is added, it searches for the config file in web-inf, this tag is used to reet the context file to custom location -->
+<!-- if  ContextLoaderListener is added, it searches for the config file in web-inf, this tag is used to reset the context file to custom location -->
 <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/Login-context.xml</param-value>

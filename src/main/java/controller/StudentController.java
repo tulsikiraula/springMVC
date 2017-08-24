@@ -12,7 +12,7 @@ import bean.Student;
 public class StudentController {
 	
 	//command is required if form:form is used in jsp and return empty student object in student page
-	//Login-context.xml is required for redirecting the page using controller for the first time.
+	//Login-context.xml is required for redirecting the page using controller for the first time when used with model object. 
 	@RequestMapping(value="/student",method=RequestMethod.GET)
 	  public ModelAndView student() {
 	      return new ModelAndView("student", "command", new Student());
@@ -25,6 +25,6 @@ public class StudentController {
 			      model.addAttribute("age", student.getAge());
 			      model.addAttribute("id", student.getId());
 			      
-			      return "showDetails";
+			      return "showDetails"; //(use "redirect:page_name" to redirect to any page)
 	}
 }
